@@ -10,7 +10,7 @@ $botnick="Werty";
 //request libraries
 require_once("libraries/TeamSpeak3/TeamSpeak3.php");
 //connect to ts3
-$ts3_VirtualServer = TeamSpeak3::factory("serverquery://$user:$psw@$ip:$qport/?server_port=$port&nickname=$botnick");
+$ts3_VirtualServer = TeamSpeak3::factory("serverquery://$user:$psw@$ip:$qport/?server_port=$port&nickname=$botnick&blocking=0");
 
 //Current host message
 $lsthostmex=$ts3_VirtualServer->serverGetByPort("9987")->getProperty("virtualserver_welcomemessage"); 

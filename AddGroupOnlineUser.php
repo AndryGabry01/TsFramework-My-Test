@@ -1,6 +1,6 @@
 <?php
 // Add Group To All Online User
-
+// thanks to https://r4p3.net/members/kalle.2563/
 //connection variable
 $port="9987";
 $psw="Query Password";
